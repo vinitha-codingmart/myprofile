@@ -4,7 +4,16 @@ export default class Contact extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = {
+      name:'',
+      email: '',
+      subject: '',
+      message: ''
+    };
+  }
+
+  handleChange = (event)=>{
+    this.setState({[event.target.name]: event.target.value})
   }
 
   render() {
@@ -41,7 +50,7 @@ export default class Contact extends Component {
                     value=""
                     size="35"
                     id="contactName"
-                    name="contactName"
+                    name="name"
                   />
                 </div>
 
@@ -54,7 +63,7 @@ export default class Contact extends Component {
                     value=""
                     size="35"
                     id="contactEmail"
-                    name="contactEmail"
+                    name="email"
                   />
                 </div>
 
@@ -65,7 +74,7 @@ export default class Contact extends Component {
                     value=""
                     size="35"
                     id="contactSubject"
-                    name="contactSubject"
+                    name="subject"
                   />
                 </div>
 
@@ -77,7 +86,7 @@ export default class Contact extends Component {
                     cols="50"
                     rows="15"
                     id="contactMessage"
-                    name="contactMessage"
+                    name="message"
                   ></textarea>
                 </div>
 

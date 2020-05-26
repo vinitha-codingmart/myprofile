@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://vinitha-codingmart.github.io/myprofile",
   "devDependencies": {
-    "gh-pages":"^1.0.0"
+    "gh-pages": "^1.0.0"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
